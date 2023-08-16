@@ -15,4 +15,14 @@ use App\Http\Controllers\Api\TodoController;
 |
 */
 
-Route::get('/todo', [TodoController::class, 'index']);
+// Route::get('/todo', [TodoController::class, 'index']);
+
+// Route::get('/todo/{todo}', [TodoController::class, 'show']);
+
+// Route::post('/todo', [TodoController::class, 'store']);
+
+// Route::put('/todo/{todo}', [TodoController::class, 'update']);
+
+// Route::delete('/todo/{todo}', [TodoController::class, 'destroy']);
+
+Route::apiResource('todo', TodoController::class);
